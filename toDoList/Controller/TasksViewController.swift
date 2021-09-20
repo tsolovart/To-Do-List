@@ -26,6 +26,20 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
+        
+        // [7] Добавление задачи
+        let alertController = UIAlertController(title: "New Task", message: "Add new task", preferredStyle: .alert)
+        alertController.addTextField()
+        let save = UIAlertAction(title: "Save", style: .default) { _ in
+            // [7] Если ли текстовое поле? Если ли у текстового поля текст?
+            guard let textField = alertController.textFields?.first, textField.text != "" else { return }
+        }
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        alertController.addAction(save)
+        alertController.addAction(cancel)
+        
+        present(alertController, animated: true, completion: nil)
     }
     
     // [6] Выход из приложения

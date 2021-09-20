@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		2815942A26EEF70F00302AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2815942926EEF70F00302AD1 /* Assets.xcassets */; };
 		2815942D26EEF70F00302AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2815942B26EEF70F00302AD1 /* LaunchScreen.storyboard */; };
 		2815943526F08E0800302AD1 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815943426F08E0800302AD1 /* TasksViewController.swift */; };
+		28703ADD26F82CA000198B7B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28703ADC26F82CA000198B7B /* Task.swift */; };
+		28703ADF26F82CB000198B7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28703ADE26F82CB000198B7B /* User.swift */; };
 		289F474826F18C3700BF5CAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 289F474726F18C3700BF5CAC /* GoogleService-Info.plist */; };
 		86DD3C82F7B1F5B5BFC2E567 /* Pods_toDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C3DD507118AE2969029C2A /* Pods_toDoList.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		2815942C26EEF70F00302AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2815942E26EEF70F00302AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2815943426F08E0800302AD1 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		28703ADC26F82CA000198B7B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		28703ADE26F82CB000198B7B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		289F474726F18C3700BF5CAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA8264FDF38B1C0753B5111B /* Pods-toDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoList.debug.xcconfig"; path = "Target Support Files/Pods-toDoList/Pods-toDoList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +71,7 @@
 		2815941F26EEF70D00302AD1 /* toDoList */ = {
 			isa = PBXGroup;
 			children = (
+				28703AE026F82CB800198B7B /* Models */,
 				2815943826F08E7600302AD1 /* Controller */,
 				2815943626F08E3900302AD1 /* Supporting files */,
 			);
@@ -96,13 +101,21 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		28703AE026F82CB800198B7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28703ADC26F82CA000198B7B /* Task.swift */,
+				28703ADE26F82CB000198B7B /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		328DABF82251BB428DC63BBB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DA8264FDF38B1C0753B5111B /* Pods-toDoList.debug.xcconfig */,
 				123EEF8EC2EFCDD5364CDAD0 /* Pods-toDoList.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -231,6 +244,8 @@
 			files = (
 				2815942526EEF70D00302AD1 /* LoginViewController.swift in Sources */,
 				2815943526F08E0800302AD1 /* TasksViewController.swift in Sources */,
+				28703ADF26F82CB000198B7B /* User.swift in Sources */,
+				28703ADD26F82CA000198B7B /* Task.swift in Sources */,
 				2815942126EEF70D00302AD1 /* AppDelegate.swift in Sources */,
 				2815942326EEF70D00302AD1 /* SceneDelegate.swift in Sources */,
 			);
